@@ -8,4 +8,28 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+
+    <style name="TableImage">
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+
+
+
+    </style>
+
+    <style name="TableText">
+        <item name="android:layout_gravity">center|bottom</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:layout_weight">4</item>
+        <item name="android:textAlignment">center</item>
+
+    </style>
+
 </resources>

@@ -1,16 +1,186 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center"
     tools:context="com.example.risbo.friendsr.BrowseActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+        android:text="Friendsr"
+        android:textSize="50dp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Click on an eligible single user to learn more and see if you are compatible for a date!"/>
+
+    <TableLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <!-- ROW 1 -->
+
+        <TableRow android:weightSum="1"
+            android:layout_weight="0.5"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent"
+
+            >
+
+            <LinearLayout android:orientation="vertical"
+                            android:layout_weight="0.5"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+
+                           >
+                <ImageButton
+                    android:src="@drawable/chandler"
+                    style="@style/TableImage"
+                    android:tag="chandler"
+
+
+                    />
+                <TextView
+                    style="@style/TableText"
+                    android:text="Chandler"
+
+
+                    />
+
+            </LinearLayout>
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        >
+        <ImageButton
+            android:src="@drawable/monica"
+            style="@style/TableImage"
+            android:tag="monica"
+            />
+        <TextView
+            style="@style/TableText"
+            android:text="Monica"
+            />
+
+    </LinearLayout>
+
+
+        </TableRow>
+
+
+        <!-- ROW 2 -->
+
+        <TableRow android:weightSum="1"
+            android:layout_weight="0.5"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent"
+            >
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                >
+                <ImageButton
+                    android:src="@drawable/rachel"
+                    style="@style/TableImage"
+                    android:tag="rachel"
+                    />
+                <TextView
+                    style="@style/TableText"
+                    android:text="Rachel"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                >
+                <ImageButton
+                    android:src="@drawable/joey"
+                    style="@style/TableImage"
+                    android:tag="joey"
+                    />
+                <TextView
+                    style="@style/TableText"
+                    android:text="Joey"
+                    />
+
+            </LinearLayout>
+
+
+        </TableRow>
+
+
+        <!-- ROW 3 -->
+
+
+        <TableRow android:weightSum="1"
+            android:layout_weight="0.5"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent"
+            >
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                >
+                <ImageButton
+                    android:src="@drawable/ross"
+                    style="@style/TableImage"
+                    android:tag="ross"
+                    />
+                <TextView
+                    style="@style/TableText"
+                    android:text="Ross"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                >
+                <ImageButton
+                    android:src="@drawable/phoebe"
+                    style="@style/TableImage"
+                    android:tag="phoebe"
+                    />
+                <TextView
+                    style="@style/TableText"
+                    android:text="Phoebe"
+                    />
+
+            </LinearLayout>
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+</LinearLayout>
