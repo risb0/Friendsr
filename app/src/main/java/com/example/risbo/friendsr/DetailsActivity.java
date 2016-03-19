@@ -21,8 +21,6 @@ public class DetailsActivity extends SimpleActivity implements RatingBar.OnRatin
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
-
-
         ImageView profileImageView = (ImageView) findViewById(R.id.imageProfile);
         TextView profileNameTextView = (TextView) findViewById(R.id.nameProfile);
         TextView profileDescriptionTextView = (TextView) findViewById(R.id.descriptionProfile);
@@ -33,25 +31,16 @@ public class DetailsActivity extends SimpleActivity implements RatingBar.OnRatin
         rating = intent.getFloatExtra("rating", 0);
 
         ratingBar.setRating(rating);
-
-        ratingBar.setOnRatingBarChangeListener(this);
-
-
-
-
-
         profileNameTextView.setText(friendsName);
 
+        ratingBar.setOnRatingBarChangeListener(this);
+        
         int imageId = getResources().getIdentifier(friendsName.toLowerCase(),"drawable", getPackageName());
         profileImageView.setImageResource(imageId);
 
         int descriptionId = getResources().getIdentifier(friendsName.toLowerCase(),"raw",getPackageName());
         String profileDescription = readFileText(descriptionId);
         profileDescriptionTextView.setText(profileDescription);
-
-
-
-
 
     }
 
@@ -61,6 +50,7 @@ public class DetailsActivity extends SimpleActivity implements RatingBar.OnRatin
         Intent intent = new Intent(this,BrowseActivity.class);
         rating = ratingBar.getRating();
         intent.putExtra("rating",rating);
+        intent.putExtra("friendsName",friendsName);
         startActivity(intent);
 
         Toast.makeText(this, "You rated " + friendsName + " " + rating + " stars!", Toast.LENGTH_SHORT).show();
