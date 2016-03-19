@@ -49,9 +49,10 @@
 
                            >
                 <ImageButton
+                    android:id="@+id/chandler"
                     android:src="@drawable/chandler"
                     style="@style/TableImage"
-                    android:tag="chandler"
+                    android:tag="Chandler"
 
 
 
@@ -73,9 +74,10 @@
 
         >
         <ImageButton
+            android:id="@+id/monica"
             android:src="@drawable/monica"
             style="@style/TableImage"
-            android:tag="monica"
+            android:tag="Monica"
             />
         <TextView
             style="@style/TableText"
@@ -104,9 +106,10 @@
 
                 >
                 <ImageButton
+                    android:id="@+id/rachel"
                     android:src="@drawable/rachel"
                     style="@style/TableImage"
-                    android:tag="rachel"
+                    android:tag="Rachel"
                     />
                 <TextView
                     style="@style/TableText"
@@ -123,9 +126,10 @@
 
                 >
                 <ImageButton
+                    android:id="@+id/joey"
                     android:src="@drawable/joey"
                     style="@style/TableImage"
-                    android:tag="joey"
+                    android:tag="Joey"
                     />
                 <TextView
                     style="@style/TableText"
@@ -155,9 +159,10 @@
 
                 >
                 <ImageButton
+                    android:id="@+id/ross"
                     android:src="@drawable/ross"
                     style="@style/TableImage"
-                    android:tag="ross"
+                    android:tag="Ross"
                     />
                 <TextView
                     style="@style/TableText"
@@ -174,9 +179,10 @@
 
                 >
                 <ImageButton
+                    android:id="@+id/phoebe"
                     android:src="@drawable/phoebe"
                     style="@style/TableImage"
-                    android:tag="phoebe"
+                    android:tag="Phoebe"
                     />
                 <TextView
                     style="@style/TableText"
