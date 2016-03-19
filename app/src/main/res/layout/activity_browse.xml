@@ -38,18 +38,21 @@
             android:layout_height="0dp"
             android:layout_width="fill_parent"
 
+
             >
 
             <LinearLayout android:orientation="vertical"
                             android:layout_weight="0.5"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
 
                            >
                 <ImageButton
                     android:src="@drawable/chandler"
                     style="@style/TableImage"
                     android:tag="chandler"
+
 
 
                     />
@@ -66,6 +69,7 @@
         android:layout_weight="0.5"
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_marginRight="20dp"
 
         >
         <ImageButton
@@ -96,6 +100,7 @@
                 android:layout_weight="0.5"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
 
                 >
                 <ImageButton
@@ -114,6 +119,7 @@
                 android:layout_weight="0.5"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
 
                 >
                 <ImageButton
@@ -145,6 +151,7 @@
                 android:layout_weight="0.5"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
 
                 >
                 <ImageButton
@@ -163,6 +170,7 @@
                 android:layout_weight="0.5"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
 
                 >
                 <ImageButton
