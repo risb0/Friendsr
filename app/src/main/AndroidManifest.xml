@@ -22,7 +22,7 @@
         </activity>
         <activity android:name=".ProfileActivity"
             android:parentActivityName=".BrowseActivity">
-            
+
         </activity>
     </application>
 
