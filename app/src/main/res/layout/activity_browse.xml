@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/table"
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -28,7 +33,7 @@
     <TableLayout
 
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="20dp">
 
         <!-- ROW 1 -->
@@ -197,4 +202,20 @@
 
     </TableLayout>
 
+
+
+
 </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/pictureButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="Profile"
+        android:background="@drawable/user"
+        android:scaleType="fitXY"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onProfileButtonClick"/>
+
+</RelativeLayout>
