@@ -33,6 +33,7 @@ public class DetailsActivity extends SimpleActivity implements RatingBar.OnRatin
         ratingBar.setRating(rating);
         profileNameTextView.setText(friendsName);
 
+
         ratingBar.setOnRatingBarChangeListener(this);
 
         int imageId = getResources().getIdentifier(friendsName.toLowerCase(),"drawable", getPackageName());

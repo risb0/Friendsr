@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+
+
+    android:id="@+id/table_land"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center"
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+
+
+
+
+
+    <TableLayout
+        android:layout_weight="1.5"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <!-- ROW 1 -->
+
+        <TableRow android:weightSum="3"
+            android:layout_weight="0.5"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent"
+
+
+            >
+
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+
+                >
+                <ImageButton
+                    android:id="@+id/chandler"
+                    android:background="@drawable/chandler"
+                    style="@style/TableImageLand"
+                    android:tag="Chandler"
+
+                    />
+                <TextView
+                    style="@style/TableTextLand"
+                    android:text="Chandler"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+
+                >
+                <ImageButton
+                    android:id="@+id/monica"
+                    android:background="@drawable/monica"
+                    style="@style/TableImageLand"
+                    android:tag="Monica"
+                    />
+                <TextView
+                    style="@style/TableTextLand"
+                    android:text="Monica"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+
+                >
+                <ImageButton
+                    android:id="@+id/rachel"
+                    android:background="@drawable/rachel"
+                    style="@style/TableImageLand"
+                    android:tag="Rachel"
+                    />
+                <TextView
+                    style="@style/TableTextLand"
+                    android:text="Rachel"
+                    />
+
+            </LinearLayout>
+
+        </TableRow>
+
+
+        <!-- ROW 2 -->
+
+        <TableRow android:weightSum="3"
+            android:layout_weight="0.5"
+            android:layout_height="0dp"
+            android:layout_width="fill_parent"
+            >
+
+
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+
+                >
+                <ImageButton
+                    android:id="@+id/joey"
+                    android:background="@drawable/joey"
+                    style="@style/TableImageLand"
+                    android:tag="Joey"
+                    />
+                <TextView
+                    style="@style/TableTextLand"
+                    android:text="Joey"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+
+                >
+                <ImageButton
+                    android:id="@+id/ross"
+                    android:background="@drawable/ross"
+                    style="@style/TableImageLand"
+                    android:tag="Ross"
+                    />
+                <TextView
+                    style="@style/TableTextLand"
+                    android:text="Ross"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+
+                >
+                <ImageButton
+                    android:id="@+id/phoebe"
+                    android:background="@drawable/phoebe"
+                    style="@style/TableImageLand"
+                    android:tag="Phoebe"
+                    />
+                <TextView
+                    style="@style/TableTextLand"
+                    android:text="Phoebe"
+                    />
+
+            </LinearLayout>
+
+
+
+        </TableRow>
+
+
+
+
+
+
+
+
+    </TableLayout>
+
+
+
+
+
+
+
+
+    <fragment
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/detailsfrag"
+        android:name="com.example.risbo.friendsr.DetailsFragment"
+        tools:layout="@layout/fragment_details" />
+
+
+
+</LinearLayout>

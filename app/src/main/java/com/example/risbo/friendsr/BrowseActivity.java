@@ -11,7 +11,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class BrowseActivity extends AppCompatActivity {
+import stanford.androidlib.SimpleActivity;
+
+public class BrowseActivity extends SimpleActivity {
     private float rating;
     private HashMap<String, Object> ratings_values;
 
@@ -37,11 +39,20 @@ public class BrowseActivity extends AppCompatActivity {
 
         saveRatings(friendsName);
 
-        Intent intent = new Intent(this,DetailsActivity.class);
-        intent.putExtra("friendsName", friendsName);
-        intent.putExtra("rating", rating);
-        startActivity(intent);
+        if(isPortrait()) {
 
+            Intent intent = new Intent(this, DetailsActivity.class);
+            intent.putExtra("friendsName", friendsName);
+            intent.putExtra("rating", rating);
+            startActivity(intent);
+        }
+
+        else {
+            DetailsFragment frag = (DetailsFragment) getFragmentManager().findFragmentById(R.id.detailsfrag);
+            frag.setRatingBar(rating);
+            frag.setFriendsName(friendsName);
+
+        }
     }
 
     public void saveCurrentRating () {
